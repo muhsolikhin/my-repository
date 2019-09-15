@@ -1,0 +1,64 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2.1.02" exportTime="Sun Sep 15 20:48:25 WIB 2019">
+  <item>
+    <time>Sun Sep 15 20:45:09 WIB 2019</time>
+    <url><![CDATA[https://app.cgv.id/api/movies/19027600/schedules?location_id=049&date=20190916]]></url>
+    <host ip="13.67.66.89">app.cgv.id</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/api/movies/19027600/schedules?location_id=049&date=20190916]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /api/movies/19027600/schedules?location_id=049&date=20190916 HTTP/1.1
+longitude: 
+latitude: 
+Host: app.cgv.id
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+]]></request>
+    <status>200</status>
+    <responselength>3333</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Cache-Control: private, must-revalidate
+Content-Type: application/json
+ETag: W/"e806523027772691881737bd8a45992c98dd989e"
+Vary: Accept-Encoding
+Server: nginx
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Date: Sun, 15 Sep 2019 13:44:15 GMT
+Connection: close
+Content-Length: 2978
+
+{"message":"OK","status_code":200,"data":{"auditorium_types":[{"id":"01","name":"REGULAR","thumbnail_url":"https:\/\/cgvstorage.blob.core.windows.net\/app\/auditorium-types\/thumbnails\/zxVq7-20190224010326.jpg"},{"id":"10","name":"SPHEREX","thumbnail_url":"https:\/\/cgvstorage.blob.core.windows.net\/app\/auditorium-types\/thumbnails\/T6uMJ-20190226134420.JPG"}],"cinemas":[{"id":"013","name":"Jwalk Mall","longitude":110.24521,"latitude":-7.46474,"distance":12238.22,"schedule_types":[{"auditorium_type_id":"01","movie_format":"2D","auditorium_name":"Audi #6","schedules":[{"id":2398560,"start_time":"10:30","end_time":"12:23","remaining_seat_count":250},{"id":2398561,"start_time":"12:45","end_time":"14:38","remaining_seat_count":250},{"id":2398562,"start_time":"15:00","end_time":"16:53","remaining_seat_count":250},{"id":2398563,"start_time":"17:15","end_time":"19:08","remaining_seat_count":250},{"id":2398564,"start_time":"19:30","end_time":"21:23","remaining_seat_count":248},{"id":2398565,"start_time":"21:45","end_time":"23:38","remaining_seat_count":250}]},{"auditorium_type_id":"01","movie_format":"2D","auditorium_name":"Audi #3","schedules":[{"id":2398549,"start_time":"11:30","end_time":"13:23","remaining_seat_count":198},{"id":2398550,"start_time":"13:45","end_time":"15:38","remaining_seat_count":198},{"id":2398551,"start_time":"16:00","end_time":"17:53","remaining_seat_count":198},{"id":2398552,"start_time":"18:15","end_time":"20:08","remaining_seat_count":198},{"id":2398553,"start_time":"20:30","end_time":"22:23","remaining_seat_count":198},{"id":2398554,"start_time":"22:45","end_time":"24:38","remaining_seat_count":198}]}]},{"id":"031","name":"Transmart Maguwo","longitude":110.419986,"latitude":-7.78279,"distance":12255.72,"schedule_types":[{"auditorium_type_id":"01","movie_format":"2D","auditorium_name":"Audi #4","schedules":[{"id":2419834,"start_time":"10:35","end_time":"12:28","remaining_seat_count":221},{"id":2419838,"start_time":"12:45","end_time":"14:38","remaining_seat_count":221},{"id":2419835,"start_time":"14:55","end_time":"16:48","remaining_seat_count":221},{"id":2419836,"start_time":"17:05","end_time":"18:58","remaining_seat_count":221},{"id":2419837,"start_time":"19:15","end_time":"21:08","remaining_seat_count":221},{"id":2419833,"start_time":"21:25","end_time":"23:18","remaining_seat_count":221}]}]},{"id":"017","name":"Hartono Mall","longitude":110.23567,"latitude":-7.45324,"distance":12237.23,"schedule_types":[{"auditorium_type_id":"10","movie_format":"2D","auditorium_name":"SphereX #2","schedules":[{"id":2394202,"start_time":"11:15","end_time":"13:08","remaining_seat_count":296},{"id":2394205,"start_time":"13:25","end_time":"15:18","remaining_seat_count":294},{"id":2394201,"start_time":"15:35","end_time":"17:28","remaining_seat_count":296},{"id":2394204,"start_time":"17:45","end_time":"19:38","remaining_seat_count":296},{"id":2394228,"start_time":"19:55","end_time":"21:48","remaining_seat_count":296}]}]}]}}]]></response>
+    <comment></comment>
+  </item>
+</items>

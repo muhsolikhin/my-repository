@@ -1,0 +1,62 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2.1.02" exportTime="Sun Sep 15 20:44:25 WIB 2019">
+  <item>
+    <time>Sun Sep 15 20:42:57 WIB 2019</time>
+    <url><![CDATA[https://app.cgv.id/api/movies/playing?location_id=049]]></url>
+    <host ip="13.67.66.89">app.cgv.id</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/api/movies/playing?location_id=049]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /api/movies/playing?location_id=049 HTTP/1.1
+Host: app.cgv.id
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+]]></request>
+    <status>200</status>
+    <responselength>4650</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Cache-Control: private, must-revalidate
+Content-Type: application/json
+ETag: W/"f712c402c8a8c448f5ea4daa6ef144be99b62117"
+Vary: Accept-Encoding
+Server: nginx
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Date: Sun, 15 Sep 2019 13:42:03 GMT
+Connection: close
+Content-Length: 4295
+
+{"message":"OK","status_code":200,"data":[{"id":"19028900","name":"ONE PIECE: STAMPEDE","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19028900.jpg","type":2,"genre":"ANIMATION","duration":101,"censor_rating":"13+","opening_date":"2019-09-18","featured_rank":1,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19027400","name":"DANUR 3: SUNYARURI","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19027400.jpg","type":2,"genre":"HORROR ","duration":90,"censor_rating":"13+","opening_date":"2019-09-22","featured_rank":2,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19026600","name":"MIDSOMMAR","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19026600.jpg","type":1,"genre":"THRILLER ","duration":138,"censor_rating":"21+","opening_date":"2019-09-11","featured_rank":3,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19027600","name":"WARKOP DKI REBORN","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19027600.jpg","type":1,"genre":"COMEDY","duration":103,"censor_rating":"13+","opening_date":"2019-09-12","featured_rank":4,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19025100","name":"IT CHAPTER TWO","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19025100.jpg","type":1,"genre":"HORROR ","duration":170,"censor_rating":"17+","opening_date":"2019-09-04","featured_rank":5,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19029300","name":"BIKE MAN","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19029300.jpg","type":1,"genre":"DRAMA","duration":103,"censor_rating":"13+","opening_date":"2019-09-11","featured_rank":6,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19024600","name":"GUNDALA","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19024600.jpg","type":1,"genre":"ACTION","duration":123,"censor_rating":"13+","opening_date":"2019-08-29","featured_rank":7,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19025300","name":"READY OR NOT","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19025300.jpg","type":1,"genre":"HORROR ","duration":94,"censor_rating":"17+","opening_date":"2019-08-28","featured_rank":38,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19021900","name":"TWIVORTIARE","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19021900.jpg","type":1,"genre":"DRAMA","duration":103,"censor_rating":"17+","opening_date":"2019-08-29","featured_rank":39,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19028500","name":"METALLICA & SAN FRANCISCO SYMPHONY: S&M2","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19028500.jpg","type":2,"genre":"MUSIC","duration":150,"censor_rating":"TBC","opening_date":"2019-10-09","featured_rank":60,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19021600","name":"BOBOIBOY MOVIE 2","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19021600.jpg","type":1,"genre":"ANIMATION","duration":110,"censor_rating":"SU","opening_date":"2019-08-08","featured_rank":113,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19025400","name":"THE ANGRY BIRDS MOVIE 2","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19025400.jpg","type":1,"genre":"ANIMATION","duration":97,"censor_rating":"SU","opening_date":"2019-08-14","featured_rank":223,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19024400","name":"LORONG","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19024400.jpg","type":1,"genre":"HORROR ","duration":96,"censor_rating":"13+","opening_date":"2019-09-12","featured_rank":null,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19027300","name":"KAPAL GOYANG KAPTEN","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19027300.jpg","type":1,"genre":"COMEDY","duration":110,"censor_rating":"13+","opening_date":"2019-09-05","featured_rank":null,"review_count":0,"review_score":0,"is_favorite":false},{"id":"19029400","name":"QUIET COMES THE DAWN","image_url":"https:\/\/cdn.cgv.id\/uploads\/movie\/pictures\/19029400.jpg","type":1,"genre":"HORROR ","duration":98,"censor_rating":"17+","opening_date":"2019-09-11","featured_rank":null,"review_count":0,"review_score":0,"is_favorite":false}]}]]></response>
+    <comment></comment>
+  </item>
+</items>

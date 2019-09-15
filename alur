@@ -1,0 +1,6 @@
+api_locations 		list lokasi
+schedule_location_date	list movie title
+location_id		list lokasi movie+jadwal
+seat			list kursi
+seat_book		booking kursi
+cancel			membatalkan booking

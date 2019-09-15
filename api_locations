@@ -1,0 +1,62 @@
+<?xml version="1.1"?>
+<!-- NOTE: Any NULL bytes in requests and responses are preserved within this output, even though this strictly breaks the XML syntax. If your XML parser rejects the NULL bytes then you will need to remove or replace these bytes before parsing. Alternatively, you can use the option to base64-encode requests and responses. -->
+<!DOCTYPE items [
+<!ELEMENT items (item*)>
+<!ATTLIST items burpVersion CDATA "">
+<!ATTLIST items exportTime CDATA "">
+<!ELEMENT item (time, url, host, port, protocol, method, path, extension, request, status, responselength, mimetype, response, comment)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT host (#PCDATA)>
+<!ATTLIST host ip CDATA "">
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT protocol (#PCDATA)>
+<!ELEMENT method (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT extension (#PCDATA)>
+<!ELEMENT request (#PCDATA)>
+<!ATTLIST request base64 (true|false) "false">
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT responselength (#PCDATA)>
+<!ELEMENT mimetype (#PCDATA)>
+<!ELEMENT response (#PCDATA)>
+<!ATTLIST response base64 (true|false) "false">
+<!ELEMENT comment (#PCDATA)>
+]>
+<items burpVersion="2.1.02" exportTime="Sun Sep 15 20:44:04 WIB 2019">
+  <item>
+    <time>Sun Sep 15 20:26:36 WIB 2019</time>
+    <url><![CDATA[https://app.cgv.id/api/locations]]></url>
+    <host ip="13.67.66.89">app.cgv.id</host>
+    <port>443</port>
+    <protocol>https</protocol>
+    <method><![CDATA[GET]]></method>
+    <path><![CDATA[/api/locations]]></path>
+    <extension>null</extension>
+    <request base64="false"><![CDATA[GET /api/locations HTTP/1.1
+Host: app.cgv.id
+Connection: close
+Accept-Encoding: gzip, deflate
+User-Agent: okhttp/3.12.1
+
+]]></request>
+    <status>200</status>
+    <responselength>1828</responselength>
+    <mimetype>JSON</mimetype>
+    <response base64="false"><![CDATA[HTTP/1.1 200 OK
+Cache-Control: private, must-revalidate
+Content-Type: application/json
+ETag: W/"e8269021ddb909d32d28d1cdb5fe4fa81889bc6e"
+Vary: Accept-Encoding
+Server: nginx
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Date: Sun, 15 Sep 2019 13:25:41 GMT
+Connection: close
+Content-Length: 1473
+
+{"message":"OK","status_code":200,"data":[{"id":"000","name":"Jakarta","cinema_count":10},{"id":"007","name":"Balikpapan","cinema_count":1},{"id":"009","name":"Bandung","cinema_count":6},{"id":"011","name":"Batam","cinema_count":4},{"id":"013","name":"Bekasi","cinema_count":3},{"id":"059","name":"Blitar","cinema_count":1},{"id":"017","name":"Cirebon","cinema_count":2},{"id":"019","name":"Depok","cinema_count":1},{"id":"102","name":"Gresik","cinema_count":1},{"id":"104","name":"Jember","cinema_count":1},{"id":"051","name":"Karawang","cinema_count":2},{"id":"021","name":"Kediri","cinema_count":1},{"id":"008","name":"Lampung","cinema_count":1},{"id":"022","name":"Madiun","cinema_count":1},{"id":"024","name":"Makassar","cinema_count":2},{"id":"026","name":"Manado","cinema_count":1},{"id":"027","name":"Mataram","cinema_count":1},{"id":"028","name":"Medan","cinema_count":1},{"id":"029","name":"Mojokerto","cinema_count":1},{"id":"032","name":"Palembang","cinema_count":3},{"id":"034","name":"Pekanbaru","cinema_count":3},{"id":"036","name":"Probolinggo","cinema_count":1},{"id":"103","name":"Purwakarta","cinema_count":1},{"id":"050","name":"Purwokerto","cinema_count":1},{"id":"042","name":"Solo","cinema_count":1},{"id":"041","name":"Surabaya","cinema_count":2},{"id":"044","name":"Tangerang","cinema_count":4},{"id":"043","name":"Tangerang Selatan","cinema_count":1},{"id":"048","name":"Tegal","cinema_count":1},{"id":"049","name":"Yogyakarta","cinema_count":3}]}]]></response>
+    <comment></comment>
+  </item>
+</items>
